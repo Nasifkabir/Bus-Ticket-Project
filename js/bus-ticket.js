@@ -4,6 +4,13 @@ let total = 0;
 let discount = 0;
 const seatArr = [];
 
+const phoneNum = document.getElementById("phone-number");
+phoneNum.addEventListener("input", function () {
+  if (seatBook >= 1 && phoneNum.value.length !== 0) {
+    next.removeAttribute("disabled");
+  }
+});
+
 // Coupon code apply
 const apply = document.getElementById("apply");
 apply.addEventListener("click", function () {
@@ -82,11 +89,16 @@ for (const seat of seats) {
         document.getElementById("grand-total").innerText = grand;
 
         // functioning next button
-        const phoneNum = document.getElementById("phone-number").value;
-        const next = document.getElementById("next");
-        if (seatBook >= 1 && phoneNum.length !== 0) {
-          next.removeAttribute("disabled");
-        }
+        seat.addEventListener("click", function (event) {
+          // Existing seat booking logic...
+
+          // Update the 'functioning next button' logic here
+          const phoneNum = document.getElementById("phone-number").value;
+          const next = document.getElementById("next");
+          if (seatBook >= 1 && phoneNum.length !== 0) {
+            next.removeAttribute("disabled");
+          }
+        });
       } else {
         event.stopPropagation();
       }
