@@ -7,13 +7,13 @@
     <title>Easy Paribahan Bus Ticket</title>
     <!--Tailwind & DaisyUI-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <!--font styles-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .font-raleway {
             font-family: "Raleway", sans-serif;
@@ -51,8 +51,7 @@
                 <h1 class="font-raleway font-extrabold text-6xl text-[#1DD100]">Easy Paribahan</h1>
                 <p class="font-inter font-light text-xl text-white text-center">Easy Paribahan provides convenient
                     transportation solutions<br>for your everyday travel needs.</p>
-                <button class="btn border-none bg-[#1DD100] text-black font-raleway text-xl font-bold rounded-xl">Buy
-                    Tickets</button>
+                <button class="btn border-none bg-[#1DD100] text-black font-raleway text-xl font-bold rounded-xl"><a href="#booking">Buy Tickets</a></button>
                 <!--Banner card items-->
                 <div class="flex gap-8 mt-12">
                     <div class="flex bg-white border-b-4 border-[#1DD100] rounded-3xl p-8 gap-4">
@@ -98,15 +97,15 @@
                         <span class="font-raleway text-xs font-medium text-[#03071266]">Coupon Code</span>
                     </div>
                 </div>
-                <div class="bg-[#F78C9C] rounded-3xl w-[573px] flex pl-14 pr-10">
+                <div class="bg-[#F78C9C] rounded-3xl w-[580px] flex pl-14 pr-10">
                     <div class="w-96 flex flex-col justify-center ">
                         <h1 class="font-inter text-4xl text-[#030712CC] font-black">15% OFF</h1>
                         <span class="font-inter text-xl text-[#030712CC] font-semibold">on your next purchase</span>
                         <span class="font-inter text-xs font-medium text-[#03071280]">use by January 2024</span>
                     </div>
                     <img src="images/cupon-devider.png" alt="">
-                    <div class="flex flex-col justify-center">
-                        <h1 class="font-raleway text-3xl font-bold text-black">Couple20</h1>
+                    <div class="flex flex-col justify-center w-[300px]">
+                        <h1 class="font-raleway text-3xl font-bold text-black ">Couple 20</h1>
                         <span class="font-raleway text-xs font-medium text-[#03071266]">Coupon Code</span>
                     </div>
                 </div>
@@ -119,7 +118,7 @@
         </div>
     </section>
     <!--Main Section-->
-    <section>
+    <section id="main-section">
         <div class="h-10 border-t-2 border-[#1DD100] bg-[#F7F8F8] rounded-t-full mt-32"></div>
         <!-- Ticket Section-->
         <section id="booking" class="border-b bg-[#F7F8F8]">
